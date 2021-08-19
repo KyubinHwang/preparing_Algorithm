@@ -16,3 +16,38 @@
 각 줄에 하나씩, 사전식으로 가능성 있는 암호를 모두 출력한다.
 
 ## - 풀이 방법
+백트래킹을 이용한 문제로 벡터에 암호를 담아가면서 해결하였다. 문자의 벡터 두개를 만들어서 하나는 C개의 문자들을 담고, 하나는 암호가 될 벡터를 만들었다.
+
+이 때 암호가 사전식으로 만들어질 수 있게 C개의 문자들이 담아진 벡터를 정렬하였다. 그리고 백트래킹 함수를 이용하여 문제를 해결하였다.
+
+    void makeCode(int r, int dept, vector <char> v, vector <char> code) {
+
+      if (dept == L) {
+        printing(code);
+        return;
+      }
+
+      for (int i = r; i < C; i++) {
+        code[dept] = v[i];
+        makeCode(i + 1, dept + 1, v, code);
+      }
+    }
+
+이전에 풀었던 백트래킹과 마찬가지로 깊이가 L이 되었을 때 암호를 생성하여 출력하도록 하였고, 재귀함수에 들어갈 때 다음 인덱스와 깊이를 하나씩 더해서 반복하였다. 이 때 암호 출력에 경우 최소 한 개의 모음, 최소 두개의 자음이 있어야하므로 먼저 모음의 개수를 센 후 암호의 길이인 L에서 빼주어 자음의 개수 또한 2가 되는지 확인하여 맞다면 출력하도록 하였다.
+
+    void printing(vector <char> code) {
+
+      int m = 0;
+
+      for (int i = 0; i < L; i++) {
+        if (code[i] == 'a' || code[i] == 'e' || code[i] == 'i' || code[i] == 'o' || code[i] == 'u') {
+          m++;
+        }
+      }
+      if (m > 0 && (L - m) > 1) {
+        for (int i = 0; i < L; i++) {
+          cout << code[i];
+        }
+        cout << "\n";
+      }
+    }
