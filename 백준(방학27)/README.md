@@ -19,3 +19,29 @@
 
 4 ≤ n ≤ 10,000
 ## - 풀이 방법
+시간을 어떻게 하면 줄일 수 있는 지 생각하는 문제로 조금 까다로워서 블로그를 참조하여 풀 수 있었던 문제였다. 두 수의 합인 것을 생각하여 숫자를 반으로 나눴을 때 그 숫자가 소수인지 여부를 확인하고 가장 최대가 될 수 있는 소수인 것을 확인하여 출력하는 문제였다. 
+
+따라서 구하고자 하는 범위의 숫자들이 소수인지 판별을 하는 함수와, n이라는 짝수가 주어졌을 때 이 숫자를 반으로 나눠서 구했을 때 for문을 통해 점점 작아지면서 두 숫자가 모두 소수 일 때의 경우를 출력하면 되었다.
+
+    void primetest() {
+
+      fill_n(gold, 10000, true);
+      gold[0] = gold[1] = false;
+      for (int i = 2; i < 5000; i++) {
+        if (!gold[i]) continue;
+        int temp = 2;
+        while (i * temp < 10000) {
+          gold[i * temp] = false;
+          temp++;
+        }
+      }
+    }
+
+    void find(int n) {
+      int n2 = n / 2;
+      for (int i = n2; i > 1; i--) {
+        if (!(gold[i] && gold[n - i])) continue;
+        cout << i << " " << n - i << "\n";
+        break;
+      }
+    }
