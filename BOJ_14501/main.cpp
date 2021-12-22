@@ -16,7 +16,6 @@ int main(int argc, const char * argv[]) {
         T[i] = tmp1;
         P[i] = tmp2;
     }
-    
     for(int i = N; i >= 1; i--){
         if(i + T[i] - 1 > N){
             dp[i] = dp[i + 1];
