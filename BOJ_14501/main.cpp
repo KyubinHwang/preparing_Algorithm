@@ -10,8 +10,8 @@ vector <int> dp(16);
 int main(int argc, const char * argv[]) {
     
     int tmp1,tmp2;
-    
     cin >> N;
+    
     for(int i = 1;i <= N;i++){
         cin >> tmp1 >> tmp2;
         T[i] = tmp1;
