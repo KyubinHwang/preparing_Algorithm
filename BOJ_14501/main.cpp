@@ -2,13 +2,12 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
-int N;
 vector <int> T(16);
 vector <int> P(16);
 vector <int> dp(16);
 
 int main(int argc, const char * argv[]) {
-    
+    int N;
     int tmp1,tmp2;
     cin >> N;
     
