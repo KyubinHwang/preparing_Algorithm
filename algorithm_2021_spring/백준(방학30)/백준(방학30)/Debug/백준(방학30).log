@@ -1,0 +1,5 @@
+﻿  백준(방학30).cpp
+c:\users\규빈\desktop\공부\algorithm 21-spring\백준(방학30)\백준(방학30)\백준(방학30).cpp(16): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\stdio.h(1269): note: 'scanf' 선언을 참조하십시오.
+  백준(방학30).vcxproj -> C:\Users\규빈\Desktop\공부\algorithm 21-spring\백준(방학30)\Debug\백준(방학30).exe
+  백준(방학30).vcxproj -> C:\Users\규빈\Desktop\공부\algorithm 21-spring\백준(방학30)\Debug\백준(방학30).pdb (Partial PDB)
