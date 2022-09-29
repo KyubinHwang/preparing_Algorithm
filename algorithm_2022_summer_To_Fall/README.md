@@ -82,3 +82,14 @@
 34. Lv.2 - 두 큐 합 같게 만들기 (자료구조 - 큐)
 
 ## 🔥 결과  
+- 중앙그룹(콘텐트리 중앙) (합격) - 3.5 솔
+    - 알고리즘 3문제, SQL 1문제
+    - Map
+    - 누적 합
+    - 자료구조?
+    - SQL LEFT JOIN, GROUP BY, HAVING 이용하기
+
+- 현대 IT&E (합격) - 2.5 솔?
+    - 완전 탐색(효율성 버림), DP(효율성 고려시)
+    - defaultdic
+    - SQL LEFT JOIN, GROUP BY 이용하기
