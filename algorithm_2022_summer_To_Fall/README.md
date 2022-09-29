@@ -90,6 +90,7 @@
     - SQL LEFT JOIN, GROUP BY, HAVING 이용하기
 
 - 현대 IT&E (합격) - 2.5 솔?
+    - 알고리즘 2문제, SQL 1문제
     - 완전 탐색(효율성 버림), DP(효율성 고려시)
     - defaultdic
     - SQL LEFT JOIN, GROUP BY 이용하기
